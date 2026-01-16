@@ -22,7 +22,7 @@ def text_classify_using_sklearn(text: str) -> str:
     return model.predict(test_feature)
 
 def text_classify_using_qwen(text: str) -> str:
-    client = OpenAI(api_key="sk-81d03a1bea7e41729bf3026c5512b1b6", base_url="https://dashscope.aliyuncs.com/compatible-mode/v1")
+    client = OpenAI(api_key="sk-81d03a1beaxxxxx6c5512b1b6", base_url="https://dashscope.aliyuncs.com/compatible-mode/v1")
     response = client.chat.completions.create(
         model="qwen3-max",
         messages=[{"role": "user", "content": f""":请进行文本分类{text}
