@@ -47,7 +47,7 @@ def text_calssify_using_llm(text: str) -> str:
     文本分类(大语言模型)，输入文本完成类别划分
     """
     client = OpenAI(
-        api_key="sk-8f965d790ae24d5188af80effe79a180",
+        api_key="sk-8f965d790aexxxx0effe79a180",
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1"
     )
 
