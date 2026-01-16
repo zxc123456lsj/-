@@ -44,7 +44,7 @@ def text_classify_using_qwen(text: str) -> str:
     return response.choices[0].message.content
 
 def text_classify_using_deepseek(text: str) -> str:
-    client = OpenAI(api_key="sk-ed8596837b06417280c31406a13c8841", base_url="https://api.deepseek.com")
+    client = OpenAI(api_key="sk-ed8596837xxxx1406a13c8841", base_url="https://api.deepseek.com")
     response = client.chat.completions.create(
         model="deepseek-chat",
         messages=[{"role": "user", "content": f""":请进行文本分类{text}
