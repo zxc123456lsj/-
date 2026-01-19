@@ -2,7 +2,7 @@
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="sk-6f04889b11624d61874f5e51e247692d",
+    api_key="sk-6f04889b11xxxxxxe51e247692d",
 
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
