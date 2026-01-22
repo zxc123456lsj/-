@@ -67,14 +67,18 @@ class SimpleClassifier(nn.Module):
         out = self.fc1(x)
         out = self.relu(out)
         out = self.fc2(out)
+        out = self.relu(out)
+        out = self.fc3(out)
+        out = self.relu(out)
+        out = self.fc4(out)
         return out
 
 char_dataset = CharBoWDataset(texts, numerical_labels, char_to_index, max_len, vocab_size)
 dataloader = DataLoader(char_dataset, batch_size=32, shuffle=True)
 hidden_dim = 64
 hidden_dim2 = 64
-hidden_dim3 = 32
-hidden_dim4 = 128
+hidden_dim3 = 64
+hidden_dim4 = 64
 output_dim = len(label_to_index)
 print(f"vocab_size: {vocab_size}")
 model = SimpleClassifier(vocab_size, hidden_dim,hidden_dim2,hidden_dim3,hidden_dim4, output_dim)
