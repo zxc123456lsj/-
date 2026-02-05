@@ -1,17 +1,19 @@
 # python自带库
 import time
 import traceback
+from typing import Union
 
 # 第三方库
+import openai
 from fastapi import FastAPI
 
 # 自己写的模块
 from data_schema import TextClassifyResponse
 from data_schema import TextClassifyRequest
-from prompt import model_for_gpt
-from bert import model_for_bert
-from regex_rule import model_for_regex
-from tfidf_ml import model_for_tfidf
+from model.prompt import model_for_gpt
+from model.bert import model_for_bert
+from model.regex_rule import model_for_regex
+from model.tfidf_ml import model_for_tfidf
 from logger import logger
 
 app = FastAPI()
@@ -91,7 +93,6 @@ def bert_classify(req: TextClassifyRequest) -> TextClassifyResponse:
     )
     # info 日志
     try:
-        print(req.request_text)
         response.classify_result = model_for_bert(req.request_text)
         response.error_msg = "ok"
     except Exception as err:

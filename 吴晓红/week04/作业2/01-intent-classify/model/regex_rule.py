@@ -32,5 +32,3 @@ def model_for_regex(request_text: Union[str, List[str]]) -> Union[str, List[str]
         raise Exception("格式不支持")
     print(classify_result)
     return classify_result
-
-# result = model_for_regex("1+1=?")

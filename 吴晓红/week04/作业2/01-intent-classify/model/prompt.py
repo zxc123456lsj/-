@@ -3,7 +3,9 @@ from typing import Union, List
 import openai
 import pandas as pd
 import numpy as np
+import jieba
 from joblib import load
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 from config import (
     LLM_OPENAI_API_KEY,
@@ -12,7 +14,7 @@ from config import (
     TFIDF_MODEL_PKL_PATH
 )
 
-train_data = pd.read_csv('assets/dataset/dataset1.csv', sep='\t', header=None)
+train_data = pd.read_csv('assets/dataset/dataset.csv', sep='\t', header=None)
 
 tfidf, _ = load(TFIDF_MODEL_PKL_PATH)
 train_tfidf = tfidf.transform(train_data[0])
@@ -79,4 +81,3 @@ def model_for_gpt(request_text: Union[str, List[str]]) -> List[str]:
 # 服务间调用
 # http 居多
 # java / c++ 之间 rpc
-# result = model_for_gpt("1+1=?")

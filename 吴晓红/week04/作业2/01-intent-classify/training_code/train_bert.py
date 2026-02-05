@@ -7,18 +7,14 @@ from datasets import Dataset
 import numpy as np
 
 # 加载和预处理数据
-dataset_df = pd.read_csv('../assets/dataset/dataset1.csv', sep='\t', header=None)
+dataset_df = pd.read_csv('assets/dataset/dataset1.csv', sep='\t', header=None)
 
 # 初始化 LabelEncoder，用于将文本标签转换为数字标签
 lbl = LabelEncoder()
 # 拟合数据并转换前500个标签，得到数字标签
-type = list(dataset_df[1].values[:500])
-label_to_index = {label for i, label in enumerate(set(type))}
-
 labels = lbl.fit_transform(dataset_df[1].values[:500])
 # 提取前500个文本内容
 texts = list(dataset_df[0].values[:500])
-
 
 # 分割数据为训练集和测试集
 x_train, x_test, train_labels, test_labels = train_test_split(
@@ -29,9 +25,9 @@ x_train, x_test, train_labels, test_labels = train_test_split(
 )
 
 # 从预训练模型加载分词器和模型
-tokenizer = BertTokenizer.from_pretrained('../assets/models/bert-base-chinese')
+tokenizer = BertTokenizer.from_pretrained('./assets/models/bert-base-chinese')
 model = BertForSequenceClassification.from_pretrained(
-    '../assets/models/bert-base-chinese', num_labels=12 # 判别式模型，分多少类
+    './assets/models/bert-base-chinese', num_labels=12 # 判别式模型，分多少类
 )
 
 # 使用分词器对训练集和测试集的文本进行编码
@@ -64,7 +60,7 @@ def compute_metrics(eval_pred):
 
 # 配置训练参数
 training_args = TrainingArguments(
-    output_dir='../assets/weights/bert/', # 训练输出目录，用于保存模型和状态
+    output_dir='./assets/weights/bert/', # 训练输出目录，用于保存模型和状态
     num_train_epochs=4,                  # 训练的总轮数
     per_device_train_batch_size=16,      # 训练时每个设备（GPU/CPU）的批次大小
     per_device_eval_batch_size=16,       # 评估时每个设备的批次大小
@@ -95,7 +91,7 @@ best_model_path = trainer.state.best_model_checkpoint
 if best_model_path:
     best_model = BertForSequenceClassification.from_pretrained(best_model_path)
     print(f"The best model is located at: {best_model_path}")
-    torch.save(best_model.state_dict(), '../assets/weights/bert.pt')
-    print("Best model saved to ../assets/weights/bert.pt")
+    torch.save(best_model.state_dict(), './assets/weights/bert.pt')
+    print("Best model saved to assets/weights/bert.pt")
 else:
     print("Could not find the best model checkpoint.")

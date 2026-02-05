@@ -1262,156 +1262,57 @@ Traceback (most recent call last):
     await getter
 asyncio.exceptions.CancelledError
 
-2026-02-04 17:38:11,694 - uvicorn.error - INFO - Started server process [11364]
-2026-02-04 17:38:11,696 - uvicorn.error - INFO - Waiting for application startup.
-2026-02-04 17:38:11,699 - uvicorn.error - INFO - Application startup complete.
-2026-02-04 17:38:11,700 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-02-04 17:45:17,953 - uvicorn.error - INFO - Shutting down
-2026-02-04 17:45:18,063 - uvicorn.error - INFO - Waiting for application shutdown.
-2026-02-04 17:45:18,066 - uvicorn.error - INFO - Application shutdown complete.
-2026-02-04 17:45:18,067 - uvicorn.error - INFO - Finished server process [11364]
-2026-02-04 17:50:24,849 - uvicorn.error - INFO - Started server process [12848]
-2026-02-04 17:50:24,850 - uvicorn.error - INFO - Waiting for application startup.
-2026-02-04 17:50:24,851 - uvicorn.error - INFO - Application startup complete.
-2026-02-04 17:50:24,852 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-02-05 13:46:14,909 - uvicorn.error - INFO - Will watch for changes in these directories: ['D:\\study\\八斗学院\\直播\\src\\Week04\\01-intent-classify']
-2026-02-05 13:46:14,912 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-02-05 13:46:14,913 - uvicorn.error - INFO - Started reloader process [6096] using WatchFiles
-2026-02-05 13:46:22,782 - uvicorn.error - INFO - Started server process [15012]
-2026-02-05 13:46:22,785 - uvicorn.error - INFO - Waiting for application startup.
-2026-02-05 13:46:22,786 - uvicorn.error - INFO - Application startup complete.
-2026-02-05 13:46:22,824 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:46:53,442 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:46:57,528 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:47:12,551 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:47:27,632 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:47:42,664 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:47:56,189 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:48:53,521 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:49:07,291 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:50:36,181 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:50:47,735 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:50:53,820 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:50:54,289 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:51:22,046 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:51:30,477 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:51:33,505 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:51:59,166 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:51:59,519 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:52:00,484 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:52:06,575 - watchfiles.main - INFO - 4 changes detected
-2026-02-05 13:52:06,575 - uvicorn.error - WARNING - WatchFiles detected changes in 'model\bert.py'. Reloading...
-2026-02-05 13:52:06,599 - uvicorn.error - INFO - Shutting down
-2026-02-05 13:52:06,708 - uvicorn.error - INFO - Waiting for application shutdown.
-2026-02-05 13:52:06,708 - uvicorn.error - INFO - Application shutdown complete.
-2026-02-05 13:52:06,709 - uvicorn.error - INFO - Finished server process [15012]
-2026-02-05 13:52:08,766 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:52:12,339 - watchfiles.main - INFO - 5 changes detected
-2026-02-05 13:52:14,456 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:52:17,942 - uvicorn.error - INFO - Started server process [7324]
-2026-02-05 13:52:17,944 - uvicorn.error - INFO - Waiting for application startup.
-2026-02-05 13:52:17,946 - uvicorn.error - INFO - Application startup complete.
-2026-02-05 13:52:17,984 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:52:18,750 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:52:32,002 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:52:46,541 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:52:46,893 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:52:47,906 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:53:06,925 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:53:13,293 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:53:13,293 - uvicorn.error - WARNING - WatchFiles detected changes in 'debug_runner.py'. Reloading...
-2026-02-05 13:53:13,405 - uvicorn.error - INFO - Shutting down
-2026-02-05 13:53:13,514 - uvicorn.error - INFO - Waiting for application shutdown.
-2026-02-05 13:53:13,516 - uvicorn.error - INFO - Application shutdown complete.
-2026-02-05 13:53:13,517 - uvicorn.error - INFO - Finished server process [7324]
-2026-02-05 13:53:14,742 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:53:17,115 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:53:21,402 - uvicorn.error - INFO - Started server process [14212]
-2026-02-05 13:53:21,403 - uvicorn.error - INFO - Waiting for application startup.
-2026-02-05 13:53:21,404 - uvicorn.error - INFO - Application startup complete.
-2026-02-05 13:53:21,475 - watchfiles.main - INFO - 1 change detected
-2026-02-05 13:53:25,609 - watchfiles.main - INFO - 3 changes detected
-2026-02-05 13:53:25,609 - uvicorn.error - WARNING - WatchFiles detected changes in 'debug_runner.py'. Reloading...
-2026-02-05 13:53:25,674 - uvicorn.error - INFO - Shutting down
-2026-02-05 13:53:25,783 - uvicorn.error - INFO - Waiting for application shutdown.
-2026-02-05 13:53:25,784 - uvicorn.error - INFO - Application shutdown complete.
-2026-02-05 13:53:25,784 - uvicorn.error - INFO - Finished server process [14212]
-2026-02-05 14:13:41,365 - uvicorn.error - INFO - Started server process [14288]
-2026-02-05 14:13:41,368 - uvicorn.error - INFO - Waiting for application startup.
-2026-02-05 14:13:41,369 - uvicorn.error - INFO - Application startup complete.
-2026-02-05 14:13:41,369 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-02-05 14:13:59,872 - logger - INFO - 1 每天应该喝多少水
-2026-02-05 14:14:11,966 - logger - INFO - 1 每天应该喝多少牛奶
-2026-02-05 14:14:16,700 - logger - INFO - Get requst: {"request_id":"1","request_text":"每天应该喝多少水"}
-2026-02-05 14:14:16,702 - jieba - DEBUG - Building prefix dict from the default dictionary ...
-2026-02-05 14:14:17,339 - jieba - DEBUG - Dumping model to file cache C:\Users\Administrator\AppData\Local\Temp\jieba.cache
-2026-02-05 14:14:17,395 - jieba - DEBUG - Loading model cost 0.693 seconds.
-2026-02-05 14:14:17,395 - jieba - DEBUG - Prefix dict has been built successfully.
-2026-02-05 14:14:27,368 - openai._base_client - INFO - Retrying request to /chat/completions in 0.482822 seconds
-2026-02-05 14:14:29,877 - openai._base_client - INFO - Retrying request to /chat/completions in 0.839548 seconds
-2026-02-05 14:19:23,131 - uvicorn.error - INFO - Shutting down
-2026-02-05 14:19:23,241 - uvicorn.error - INFO - Waiting for application shutdown.
-2026-02-05 14:19:23,242 - uvicorn.error - INFO - Application shutdown complete.
-2026-02-05 14:19:23,242 - uvicorn.error - INFO - Finished server process [14288]
-2026-02-05 14:19:36,491 - uvicorn.error - INFO - Started server process [7044]
-2026-02-05 14:19:36,493 - uvicorn.error - INFO - Waiting for application startup.
-2026-02-05 14:19:36,495 - uvicorn.error - INFO - Application startup complete.
-2026-02-05 14:19:36,495 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-02-05 14:19:42,942 - openai._base_client - INFO - Retrying request to /chat/completions in 0.375166 seconds
-2026-02-05 14:19:45,353 - openai._base_client - INFO - Retrying request to /chat/completions in 0.865303 seconds
-2026-02-05 14:22:18,854 - uvicorn.error - INFO - Shutting down
-2026-02-05 14:22:18,964 - uvicorn.error - INFO - Waiting for application shutdown.
-2026-02-05 14:22:18,966 - uvicorn.error - INFO - Application shutdown complete.
-2026-02-05 14:22:18,969 - uvicorn.error - INFO - Finished server process [7044]
-2026-02-05 14:22:28,073 - uvicorn.error - INFO - Started server process [14340]
-2026-02-05 14:22:28,074 - uvicorn.error - INFO - Waiting for application startup.
-2026-02-05 14:22:28,076 - uvicorn.error - INFO - Application startup complete.
-2026-02-05 14:22:28,077 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-02-05 14:22:33,259 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-05 14:23:13,703 - uvicorn.error - INFO - Shutting down
-2026-02-05 14:23:13,815 - uvicorn.error - INFO - Waiting for application shutdown.
-2026-02-05 14:23:13,817 - uvicorn.error - INFO - Application shutdown complete.
-2026-02-05 14:23:13,818 - uvicorn.error - INFO - Finished server process [14340]
-2026-02-05 14:25:01,542 - uvicorn.error - INFO - Started server process [16896]
-2026-02-05 14:25:01,543 - uvicorn.error - INFO - Waiting for application startup.
-2026-02-05 14:25:01,545 - uvicorn.error - INFO - Application startup complete.
-2026-02-05 14:25:01,545 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-02-05 14:28:09,270 - uvicorn.error - INFO - Shutting down
-2026-02-05 14:28:09,382 - uvicorn.error - INFO - Waiting for application shutdown.
-2026-02-05 14:28:09,384 - uvicorn.error - INFO - Application shutdown complete.
-2026-02-05 14:28:09,386 - uvicorn.error - INFO - Finished server process [16896]
-2026-02-05 14:28:18,935 - uvicorn.error - INFO - Started server process [16416]
-2026-02-05 14:28:18,937 - uvicorn.error - INFO - Waiting for application startup.
-2026-02-05 14:28:18,937 - uvicorn.error - INFO - Application startup complete.
-2026-02-05 14:28:18,938 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-02-05 14:30:04,832 - uvicorn.error - INFO - Shutting down
-2026-02-05 14:30:04,934 - uvicorn.error - INFO - Waiting for application shutdown.
-2026-02-05 14:30:04,937 - uvicorn.error - INFO - Application shutdown complete.
-2026-02-05 14:30:04,939 - uvicorn.error - INFO - Finished server process [16416]
-2026-02-05 14:47:24,883 - uvicorn.error - INFO - Started server process [17264]
-2026-02-05 14:47:24,885 - uvicorn.error - INFO - Waiting for application startup.
-2026-02-05 14:47:24,886 - uvicorn.error - INFO - Application startup complete.
-2026-02-05 14:47:24,887 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-02-05 14:47:40,806 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
-2026-02-05 14:47:43,542 - logger - INFO - Get requst: {"request_id":"1","request_text":"每天应该喝多少水"}
-2026-02-05 14:47:43,543 - jieba - DEBUG - Building prefix dict from the default dictionary ...
-2026-02-05 14:47:43,543 - jieba - DEBUG - Loading model from cache C:\Users\Administrator\AppData\Local\Temp\jieba.cache
-2026-02-05 14:47:44,198 - jieba - DEBUG - Loading model cost 0.654 seconds.
-2026-02-05 14:47:44,199 - jieba - DEBUG - Prefix dict has been built successfully.
-2026-02-05 14:47:51,372 - logger - INFO - 1 每天应该喝多少牛奶
-2026-02-05 15:40:58,899 - uvicorn.error - INFO - Shutting down
-2026-02-05 15:40:59,008 - uvicorn.error - INFO - Waiting for application shutdown.
-2026-02-05 15:40:59,010 - uvicorn.error - INFO - Application shutdown complete.
-2026-02-05 15:40:59,010 - uvicorn.error - INFO - Finished server process [17264]
-2026-02-05 15:45:39,279 - uvicorn.error - INFO - Started server process [784]
-2026-02-05 15:45:39,281 - uvicorn.error - INFO - Waiting for application startup.
-2026-02-05 15:45:39,282 - uvicorn.error - INFO - Application startup complete.
-2026-02-05 15:45:39,282 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-2026-02-05 15:45:41,693 - uvicorn.error - INFO - Shutting down
-2026-02-05 15:45:41,807 - uvicorn.error - INFO - Waiting for application shutdown.
-2026-02-05 15:45:41,807 - uvicorn.error - INFO - Application shutdown complete.
-2026-02-05 15:45:41,807 - uvicorn.error - INFO - Finished server process [784]
-2026-02-05 15:56:44,919 - uvicorn.error - INFO - Started server process [20648]
-2026-02-05 15:56:44,921 - uvicorn.error - INFO - Waiting for application startup.
-2026-02-05 15:56:44,922 - uvicorn.error - INFO - Application startup complete.
-2026-02-05 15:56:44,923 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-02-05 16:37:35,739 - uvicorn.error - INFO - Started server process [20516]
+2026-02-05 16:37:35,740 - uvicorn.error - INFO - Waiting for application startup.
+2026-02-05 16:37:35,742 - uvicorn.error - INFO - Application startup complete.
+2026-02-05 16:37:35,743 - uvicorn.error - ERROR - [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8000): [winerror 10048] 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+2026-02-05 16:37:35,744 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-02-05 16:37:35,745 - uvicorn.error - INFO - Application shutdown complete.
+2026-02-05 16:40:14,072 - uvicorn.error - INFO - Started server process [10156]
+2026-02-05 16:40:14,074 - uvicorn.error - INFO - Waiting for application startup.
+2026-02-05 16:40:14,075 - uvicorn.error - INFO - Application startup complete.
+2026-02-05 16:40:14,078 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-02-05 16:40:48,623 - uvicorn.error - INFO - Shutting down
+2026-02-05 16:40:48,734 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-02-05 16:40:48,735 - uvicorn.error - INFO - Application shutdown complete.
+2026-02-05 16:40:48,736 - uvicorn.error - INFO - Finished server process [10156]
+2026-02-05 16:41:15,773 - uvicorn.error - INFO - Started server process [7288]
+2026-02-05 16:41:15,774 - uvicorn.error - INFO - Waiting for application startup.
+2026-02-05 16:41:15,775 - uvicorn.error - INFO - Application startup complete.
+2026-02-05 16:41:15,777 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-02-05 16:41:29,587 - uvicorn.error - INFO - Shutting down
+2026-02-05 16:41:29,697 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-02-05 16:41:29,698 - uvicorn.error - INFO - Application shutdown complete.
+2026-02-05 16:41:29,699 - uvicorn.error - INFO - Finished server process [7288]
+2026-02-05 16:46:28,122 - uvicorn.error - INFO - Started server process [2136]
+2026-02-05 16:46:28,123 - uvicorn.error - INFO - Waiting for application startup.
+2026-02-05 16:46:28,125 - uvicorn.error - INFO - Application startup complete.
+2026-02-05 16:46:28,126 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-02-05 16:46:36,258 - uvicorn.error - INFO - Shutting down
+2026-02-05 16:46:36,370 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-02-05 16:46:36,370 - uvicorn.error - INFO - Application shutdown complete.
+2026-02-05 16:46:36,370 - uvicorn.error - INFO - Finished server process [2136]
+2026-02-05 16:46:47,015 - uvicorn.error - INFO - Will watch for changes in these directories: ['D:\\study\\八斗学院\\直播\\20260201\\01-intent-classify']
+2026-02-05 16:46:47,031 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-02-05 16:46:47,031 - uvicorn.error - INFO - Started reloader process [15156] using WatchFiles
+2026-02-05 16:46:54,176 - uvicorn.error - INFO - Started server process [18640]
+2026-02-05 16:46:54,176 - uvicorn.error - INFO - Waiting for application startup.
+2026-02-05 16:46:54,176 - uvicorn.error - INFO - Application startup complete.
+2026-02-05 16:46:54,226 - watchfiles.main - INFO - 1 change detected
+2026-02-05 16:46:58,218 - watchfiles.main - INFO - 4 changes detected
+2026-02-05 16:46:59,237 - watchfiles.main - INFO - 1 change detected
+2026-02-05 16:47:01,513 - watchfiles.main - INFO - 1 change detected
+2026-02-05 16:47:09,642 - watchfiles.main - INFO - 1 change detected
+2026-02-05 16:47:11,110 - uvicorn.error - INFO - Shutting down
+2026-02-05 16:47:11,220 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-02-05 16:47:11,221 - uvicorn.error - INFO - Application shutdown complete.
+2026-02-05 16:47:11,222 - uvicorn.error - INFO - Finished server process [18640]
+2026-02-05 16:47:11,974 - uvicorn.error - INFO - Stopping reloader process [15156]
+2026-02-05 16:52:53,844 - logger - INFO - 1 每天应该喝多少牛奶
+2026-02-05 16:52:55,673 - logger - INFO - 1 每天应该喝多少牛奶
+2026-02-05 16:52:58,057 - logger - INFO - Get requst: {"request_id":"1","request_text":"每天应该喝多少牛奶"}
+2026-02-05 16:52:58,057 - jieba - DEBUG - Building prefix dict from the default dictionary ...
+2026-02-05 16:52:58,058 - jieba - DEBUG - Loading model from cache C:\Users\Administrator\AppData\Local\Temp\jieba.cache
+2026-02-05 16:52:58,795 - jieba - DEBUG - Loading model cost 0.736 seconds.
+2026-02-05 16:52:58,796 - jieba - DEBUG - Prefix dict has been built successfully.
+2026-02-05 16:53:07,349 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"

@@ -7,8 +7,10 @@ REGEX_RULE = {
 
 
 CATEGORY_NAME = [
-    'Education-Query', 'Entertainment-Query', 'Finance-Query', 'Food-Query', 'Health-Query', 'Social-Query',
-     'Sports-Query', 'Study-Query', 'Work-Query', 'shopping-Query'
+    'Travel-Query', 'Music-Play', 'FilmTele-Play', 'Video-Play',
+    'Radio-Listen', 'HomeAppliance-Control', 'Weather-Query',
+    'Alarm-Update', 'Calendar-Query', 'TVProgram-Play', 'Audio-Play',
+    'Other'
 ]
 
 TFIDF_MODEL_PKL_PATH = "assets/weights/tfidf_ml.pkl"

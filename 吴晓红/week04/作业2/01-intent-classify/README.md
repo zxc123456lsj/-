@@ -1,8 +1,8 @@
 # 训练模型
 
 ```commandline
-python3 training_code/train_tfidf.py
-python3 training_code/train_bert.py
+python training_code/train_tfidf.py
+python training_code/train_bert.py
 ```
 
 # 压测服务
@@ -32,5 +32,4 @@ curl -X 'POST' \
 
 ```commandline
 fastapi run main.py
-
-fastapi run main.py --reload
+```

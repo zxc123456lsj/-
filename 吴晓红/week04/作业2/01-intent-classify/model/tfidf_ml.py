@@ -9,7 +9,7 @@ from config import TFIDF_MODEL_PKL_PATH
 tfidf, model = load(TFIDF_MODEL_PKL_PATH)
 
 # 停用词
-cn_stopwords = pd.read_csv('assets/dataset/baidu_stopwords.txt', header=None)[0].values
+cn_stopwords = pd.read_csv('http://mirror.coggle.club/stopwords/baidu_stopwords.txt', header=None)[0].values
 
 
 def model_for_tfidf(request_text: Union[str, List[str]]) -> Union[str, List[str]]:
@@ -29,5 +29,3 @@ def model_for_tfidf(request_text: Union[str, List[str]]) -> Union[str, List[str]
         raise Exception("格式不支持")
     print(classify_result)
     return classify_result
-
-# result = model_for_tfidf("如何提高英语口语能力")
