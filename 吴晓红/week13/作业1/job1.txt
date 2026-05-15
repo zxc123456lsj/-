@@ -1,0 +1,9 @@
+DeepSeek-V3 requires only 2.788M H800 GPU hours for its full training, including pre-training, context length extension, and post-training.
+Throughout the entire training process, we did not experience any irrecoverable loss spikes or perform any rollbacks.
+1. MLA（多头潜在注意力）- 延续并优化
+2. DeepSeekMoE - 关键革新  we pioneer an auxiliary-loss-free strategy for load balancing
+3. MTP 多 Token 预测（V3 独有）
+4、FP8 混合精度训练（V3 独有）
+5. DualPipe 算法
+6：性能优化
+7: 参数优化
