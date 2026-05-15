@@ -1,0 +1,19 @@
+BERT（Bidirectional Encoder Representations from Transformers）是Google在2018年提出的预训练语言模型。
+BERT的核心创新是双向编码器，它同时利用文本的左右上下文信息来学习语言表示。
+
+BERT的训练包含两个任务：
+1. 掩码语言模型（Masked Language Model, MLM）：随机遮盖输入文本中的部分词，让模型预测这些被遮盖的词。
+2. 下一句预测（Next Sentence Prediction, NSP）：判断两个句子是否为连续的上下文。
+
+BERT在自然语言处理领域取得了重大突破，在GLUE基准测试中的11项任务上达到了当时的最佳水平。
+BERT的应用包括：文本分类、命名实体识别、问答系统、语义相似度计算等。
+
+BERT有两种主要变体：
+- BERT-base：12层Transformer，768维隐藏层，1.1亿参数
+- BERT-large：24层Transformer，1024维隐藏层，3.4亿参数
+
+微调（Fine-tuning）是BERT最重要的应用方式。在预训练模型的基础上，针对具体任务添加少量任务特定层，
+使用任务数据对模型参数进行微小的调整，即可在各类NLP任务上取得优异效果。
+
+中文BERT模型方面，哈工大与讯飞联合发布的"中文BERT-wwm-ext"是目前常用的中文预训练模型之一。
+它采用了全词掩码（Whole Word Masking）策略，对中文的整词进行遮盖，效果优于单字遮盖。
