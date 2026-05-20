@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.venv/
+venv/
+
+# Storage (runtime data)
+storage/*.db
+storage/pdfs/*
+storage/images/*
+storage/parsed/*
+!storage/pdfs/.gitkeep
+!storage/images/.gitkeep
+!storage/parsed/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# Test
+.pytest_cache/
+htmlcov/
+.coverage
