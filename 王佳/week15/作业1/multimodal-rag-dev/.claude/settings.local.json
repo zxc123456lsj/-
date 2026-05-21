@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(python -c \"from app.utils.kafka_utils import get_producer, get_consumer, send_message; print\\('OK: kafka_utils'\\)\")"
+    ]
+  }
+}
