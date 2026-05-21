@@ -1,0 +1,2 @@
+1、	MinerU内置OCR 引擎，可以处理扫描版PDF。pdfplumber只能读取自带文本层的 PDF
+2、	MinerU可以保留公式图标的内容，PDFplnmber无法理解公式结构。
