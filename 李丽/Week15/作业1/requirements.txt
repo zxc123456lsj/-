@@ -1,0 +1,33 @@
+# Web 框架
+streamlit>=1.30.0
+fastapi>=0.109.0
+uvicorn>=0.27.0
+python-multipart>=0.0.6
+
+# 数据库
+sqlalchemy>=2.0.0
+pymilvus>=2.3.0
+
+# 消息队列
+kafka-python>=2.0.2
+
+# 机器学习 / Embedding
+torch>=2.0.0
+transformers>=4.36.0
+sentence-transformers>=2.3.0
+pillow>=10.0.0
+
+# 文档处理
+# mineru 需要单独安装，参考：https://mineru.net/OpenSourceTools/Extractor
+
+# HTTP 客户端
+requests>=2.31.0
+httpx>=0.26.0
+
+# OpenAI 客户端
+openai>=1.10.0
+
+# 工具
+python-dotenv>=1.0.0
+numpy>=1.24.0
+pydantic>=2.5.0
