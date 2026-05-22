@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#f8fafc"/>
+  <style>
+    .box { fill: #ffffff; stroke: #2563eb; stroke-width: 2; rx: 14; }
+    .title { font: 700 22px "Microsoft YaHei", sans-serif; fill: #0f172a; }
+    .text { font: 16px "Microsoft YaHei", sans-serif; fill: #334155; }
+    .arrow { stroke: #64748b; stroke-width: 3; marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <text x="32" y="44" class="title">多模态 RAG 聊天机器人作业版架构</text>
+  <rect x="40" y="90" width="135" height="82" class="box"/>
+  <text x="70" y="124" class="text">文件上传</text>
+  <text x="60" y="150" class="text">PDF / MD</text>
+  <line x1="175" y1="131" x2="235" y2="131" class="arrow"/>
+  <rect x="245" y="90" width="135" height="82" class="box"/>
+  <text x="275" y="124" class="text">离线解析</text>
+  <text x="264" y="150" class="text">Markdown</text>
+  <line x1="380" y1="131" x2="440" y2="131" class="arrow"/>
+  <rect x="450" y="90" width="135" height="82" class="box"/>
+  <text x="480" y="124" class="text">构建索引</text>
+  <text x="472" y="150" class="text">文本/图片</text>
+  <line x1="585" y1="131" x2="645" y2="131" class="arrow"/>
+  <rect x="655" y="90" width="165" height="82" class="box"/>
+  <text x="693" y="124" class="text">图文问答</text>
+  <text x="680" y="150" class="text">检索 + 回答</text>
+  <rect x="190" y="230" width="520" height="70" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" rx="14"/>
+  <text x="225" y="260" class="text">本地作业版：SQLite + 文件存储 + TF-IDF</text>
+  <text x="225" y="286" class="text">生产可替换：Kafka + MinerU + CLIP/BGE + Milvus + Qwen-VL</text>
+</svg>
